@@ -5,11 +5,13 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-public class GreetingsController {
+public class GreetingsController
+{
 
     @RequestMapping("/greeting")
-    public String greeting(@RequestParam(name="name", required=false, defaultValue="World") String name) {
-        return "greeting new"+name;
+    public String greeting(@RequestParam(name = "name", required = false, defaultValue = "World") String name)
+    {
+        return "greeting new" + name;
     }
-
 }
+
