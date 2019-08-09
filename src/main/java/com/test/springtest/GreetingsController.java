@@ -9,7 +9,7 @@ public class GreetingsController {
 
     @RequestMapping("/greeting")
     public String greeting(@RequestParam(name="name", required=false, defaultValue="World") String name) {
-        return "greeting F222"+name;
+        return "greeting"+name;
     }
 
 }
